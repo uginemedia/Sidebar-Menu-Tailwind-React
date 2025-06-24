@@ -1,3 +1,17 @@
+/**
+ * MenuItem component renders a sidebar menu item with optional icons, label, notification dot, and outline.
+ *
+ * @param {Object} props - Component props.
+ * @param {React.ReactNode} props.icon - Icon to display when the item is active.
+ * @param {React.ReactNode} props.icon2 - Icon to display when the item is inactive.
+ * @param {string} props.label - The label text for the menu item.
+ * @param {boolean} props.active - Whether the menu item is currently active.
+ * @param {boolean} props.isOpen - Whether the sidebar is open (shows label and notification).
+ * @param {function} props.onClick - Click handler for the menu item.
+ * @param {boolean} [props.notify] - Whether to show a notification dot.
+ * @param {boolean} [props.outline] - Whether to show a top border outline.
+ * @returns {JSX.Element} The rendered MenuItem component.
+ */
 import React, { useState } from 'react'
 
 const MenuItem = ({ icon, icon2, label, active, isOpen, onClick, notify, outline }) => {

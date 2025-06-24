@@ -1,3 +1,30 @@
+/**
+ * @file Sidebar.jsx
+ * @description
+ * This file defines the Sidebar component, a collapsible navigation sidebar for a React application.
+ * The sidebar displays a list of navigation items, each with an icon, label, and optional notification badge.
+ * It supports expanding/collapsing, highlights the active menu item, and includes a user profile section at the bottom.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Sidebar />
+ * )
+ *
+ * @dependencies
+ * - React (useState)
+ * - react-icons (various icons)
+ * - MenuItem component
+ *
+ * 
+ *  *
+ * @props
+ * This component does not accept any props.
+ * 
+ * 
+ * @returns {JSX.Element} The rendered Sidebar component.
+ */
+
 import React, { useState } from 'react'
 import { LuChevronFirst, LuChevronLast } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
@@ -56,6 +83,7 @@ const Sidebar = () => {
                 ))}
             </div>
 
+
             <div className="absolute left-0 bottom-10 w-full border-t border-gray-300 pt-5 group hover:text-indigo-500">
                 <div className="flex items-center justify-between p-2 rounded cursor-pointer">
                     <div className='flex items-center space-x-3 relative'>
@@ -69,7 +97,7 @@ const Sidebar = () => {
                 </div>
                 {!isOpen && (
                 <span className="absolute left-14 top-1/2 transform -translate-y-1/6 scale-0 group-hover:scale-100 transition bg-indigo-100 text-indigo-500 text-xs px-2 py-1 rounded">
-                {"JohnDoe"}
+                {"AlanDoe"}
                 </span>
                 )}
             </div>

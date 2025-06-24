@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { LuChevronFirst, LuChevronLast } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { IoBarChartOutline } from "react-icons/io5";
-import { IoBarChartSharp } from "react-icons/io5";
 import { BsPieChart } from "react-icons/bs";
 import { BsPieChartFill } from "react-icons/bs";
 import { LiaMoneyBillWaveAltSolid } from "react-icons/lia";
